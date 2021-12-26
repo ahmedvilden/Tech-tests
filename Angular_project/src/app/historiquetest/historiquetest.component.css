@@ -1,0 +1,64 @@
+  .social-box .box{
+    background: #FFF;
+    border-radius: 10px; 
+    padding: 40px 10px;
+    margin: 20px 0px;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+    position: relative;
+    text-align: center;
+  }
+  
+  .social-box .box:hover{
+   box-shadow: 0 0 6px #ff4800;
+  }
+  
+  .social-box .box .box-text{
+    margin:20px 0px;
+    font-size: 15px;
+    line-height: 30px;
+  }
+  
+  .social-box .box .box-btn a{
+    text-decoration: none;
+    color: #4183D7;
+    font-size: 16px;
+  }
+
+  .search-table{
+    padding: 10%;
+    margin-top: -6%;
+  
+ 
+}
+.search-box{
+    background: #c1c1c1;
+    border: 1px solid #ababab;
+    padding: 3%;
+    /*margin-right: 40px;
+    margin-left: 40px;*/
+}
+.search-box input:focus{
+  box-shadow:none;
+  border:2px solid #eeeeee;
+}
+
+.search-list{
+    background: #fff;
+    border: 1px solid #c1c1c1;
+    border-top: none;
+    border-collapse: collapse;
+  /*  margin-right:40px;
+    margin-left: 40px;*/
+}
+.search-list h3{
+    background: #fff;;
+    padding: 3%;
+    margin-bottom: 0%;
+}
+.lien {
+  color: #ff4800;
+  margin-top: 10px;
+  margin-left: 300px;
+  
+}

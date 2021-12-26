@@ -1,0 +1,61 @@
+<!-- Start Page Title Area -->
+<div class="page-title-area item-bg2">
+    <div class="container">
+        <div class="page-title-content">
+            <h2>Tests</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li>Tests</li>
+            </ul>
+        </div>
+    </div>
+  </div>
+<!-- End Page Title Area -->
+
+<section class="services-area bg-f2f6f9 ptb-110">
+	<div class="section-title">
+		<h2>Liste des Tests</h2>
+		
+	</div>
+
+	<a class="lien" routerLink="/categorie"><i class="fas fa-arrow-left">Retour aux categories </i></a>
+	<br>
+<div class="social-box">
+    <div class="container">
+     	<div class="row">
+			<div *ngFor="let test of Tests" class="col-lg-8  mx-auto">
+			    
+					<div class="box">
+						
+						<div class="box-title">
+							<h3>{{test.titre}}</h3>
+						</div>
+						<div class="box-text">
+							{{test.description}}
+						</div>
+						<div class="d-flex align-items-center justify-content-between mt-1">
+							<h6 class="font-weight-bold my-2"><img src="/assets/images/question.png" alt="image">{{test.nb_questions}} Questions 
+								<img src="/assets/images/time.png" alt="image">{{test.nb_minutes}} Minutes</h6>
+						</div>
+
+						<div class="ml-lg-5 order-1 order-lg-2 ">
+							<button (click)="getquestionsbyidtest(test.id)" class="btn-pill ">
+								<span>Passer le Test</span>
+							  </button>
+						</div>
+						<div class="ml-lg-5 order-1 order-lg-2 ">
+							<button (click)="getidtest(test.id)" class="btn-pill " style="float: right; margin-top: -60px; margin-right: 40px;">
+								<span>Découvrez-en Plus</span>
+							  </button>
+						</div>
+					 </div>
+					 
+			</div>
+					 
+				
+				
+		
+		</div>		
+    </div>
+</div>
+</section>
